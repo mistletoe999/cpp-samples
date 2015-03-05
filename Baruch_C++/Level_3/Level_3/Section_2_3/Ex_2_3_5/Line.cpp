@@ -1,0 +1,47 @@
+// Implements the Line class defined in Line.hpp
+
+#include "Line.hpp"
+
+Line::Line() { // Default Constructor
+	lineStart = Point(0.0, 0.0);
+	lineEnd = Point(0.0, 0.0);
+}
+Line::Line(const Point& pS, const Point& pE) {// Constructor with start and end points
+	lineStart = pS;
+	lineEnd = pE;
+}
+
+Line::Line(const Line& line) {	// Copy Constructor
+	lineStart = line.Start();
+	lineEnd = line.End();
+}
+
+Line::~Line() { // Destructor
+
+}
+
+Point Line::Start() const { // Getter function for start-point
+	return lineStart;
+}
+
+Point Line::End() const{ // Getter function for end-point
+	return lineEnd;
+}
+
+void Line::Start(const Point& point) { // Setter function for start-point
+	lineStart = point;
+}
+
+void Line::End(const Point& point) { // Setter function for end-point
+	lineEnd = point;
+}
+
+string Line::ToString() const { // Display line information as a string
+	stringstream lineStream; // Start reading input into a stringstream
+	lineStream << "Line Segment between " << lineStart.ToString() << " and " << lineEnd.ToString(); // Add string to pointStream
+	return(lineStream.str()); // Output the string using the str() member function
+}
+
+double Line::Length() const {
+	return lineStart.Distance(lineEnd);
+}
