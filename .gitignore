@@ -1,5 +1,5 @@
 *.user
 *.exe
-*/Debug
+*/Debug/*
 *.suo
 *sdf
