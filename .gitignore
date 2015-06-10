@@ -3,3 +3,7 @@
 *Debug*
 *.suo
 *sdf
+*.pdb
+Singleton/Singleton/Release/Singleton.log
+*.tlog
+Singleton/Singleton/Release/Source.obj
