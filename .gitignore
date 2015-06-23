@@ -23,3 +23,5 @@ cmake_tutorial/chapter1-2/build/CMakeFiles/2.8.12.1/CompilerIdC/CompilerIdC
 cmake_tutorial/chapter1-2/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
 
 *build*
+
+read_hdf5/.idea/*
